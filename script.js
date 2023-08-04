@@ -152,7 +152,12 @@ function calcularDiferencia() {
 
 
 function mostrarIngresoHoraOficial() {
-  document.getElementById("ingresoHoraOficial").style.display = "block";
+  var x = document.getElementById("ingresoHoraOficial");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
 }
 
 function calcularNuevaHoraDvr() {
@@ -189,7 +194,12 @@ function calcularNuevaHoraDvr() {
 //clon bloque anterior
 
 function mostrarIngresoHoraOficial2() {
-  document.getElementById("ingresoHoraOficial2").style.display = "block";
+  var x = document.getElementById("ingresoHoraOficial2");
+  if (x.style.display === "none") {
+      x.style.display = "block";
+  } else {
+      x.style.display = "none";
+  }
 }
 
 function calcularNuevaHora2() {
