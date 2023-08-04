@@ -1,0 +1,438 @@
+.container {
+    flex: 1;
+    margin-top: 5px;        
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.result p {
+    margin-bottom: 10px;
+}
+
+.difference {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #dac527;    
+}
+
+.result .difference {
+    color: #dac527;    
+}
+
+.result .mensaje {
+    color: #542828;
+}
+
+.result .adelanto {
+    color: #01ff27;
+}
+
+.result .retraso {
+    color: #ef1212;
+}
+
+/* Estilos personalizados para el calendario */
+.ui-datepicker {
+    font-size: 14px;
+    width: 290px;    
+}
+
+.ui-datepicker-header {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ui-datepicker-calendar th {
+    background-color: #f0f0f0;
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.ui-datepicker-calendar td {
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ui-datepicker-calendar .ui-state-default:hover {
+    background-color: #f0f0f0;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.ui-datepicker-calendar .ui-state-active:hover {
+    background-color: #0069d9;
+}
+
+#ingresoHoraOficial {
+    margin-top: 100px;    
+}
+
+/*Box de login*/
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-box {
+    width: 15rem;
+    padding: 1rem;
+    text-shadow: 1px 1px 2px black, 0 0 1em rgb(255, 255, 255), 0 0 0.2em rgb(255, 255, 255);
+    background: rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .6);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.login-box h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #ff00008f;
+    text-align: center;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+.login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 6rem;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 20px;
+}
+
+.login-box form button {
+    position: relative;
+    display: inline-block;
+    padding: 1rem 1rem;
+    color: #03e9f4;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    background: transparent;
+    border-radius: 0px 45px 0px 45px;
+    cursor: pointer;
+    -webkit-border-radius: 0px 45px 0px 45px;
+    -moz-border-radius: 0px 45px 0px 45px;
+    -ms-border-radius: 0px 45px 0px 45px;
+    -o-border-radius: 0px 45px 0px 45px;
+}
+
+.login-box button:hover {
+    background: #ff0000;
+    color: #03e9f4;
+    border-radius: 50px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+.login-box form button span {
+    position: absolute;
+    display: block;
+}
+
+.login-box form button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+    }
+
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.login-box form button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.login-box form button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+
+    50%,
+    100% {
+        right: 100%;
+    }
+}
+
+.login-box form button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: justify;    
+    color: white;
+    font-size: 1rem;
+    border-radius: 90px 0px 0px 90px;
+    -webkit-border-radius: 90px 0px 0px 90px;
+    -moz-border-radius: 90px 0px 0px 90px;
+    -ms-border-radius: 90px 0px 0px 90px;
+    -o-border-radius: 90px 0px 0px 90px;
+    overflow: hidden;
+    background: linear-gradient(to right, #161917, #006b40);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    align-items: start;
+    margin-left: 1px;
+}
+
+
+.footer p {
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(163, 163, 164), 0 0 0.2em rgb(255, 255, 255);
+    margin: 0;
+}
+
+
+.message {
+    margin-top: 40px;
+    color: #ff0000;
+    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+}
+
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;    
+    background: rgb(0, 0, 0);
+    background: linear-gradient(163deg, rgba(0, 0, 0, 1) 0%, rgba(33, 65, 33, 1) 48%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    color: white;
+    height: auto;    
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 3px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    margin-right: 10px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.adelanto {
+    color: green;
+}
+
+.retraso {
+    color: red;
+}
+
+.difference {
+    font-weight: bold;
+}
+
+.invalid {
+    border-color: red;
+}
+
+
+/* Estilos específicos para el bloque "Ingreso Hora Oficial" */
+#ingresoHoraOficial {
+    margin-top: 2px;
+
+}
+
+#ingresoHoraOficial .row {
+    margin-bottom: 20px;
+}
+
+#ingresoHoraOficial .btn-primary {
+    margin-top: 20px;
+}
+
+#ingresoHoraOficial .difference {
+    font-size: 18px;
+}
+
+/* Estilos para el mensaje de resultado */
+#resultado {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 18px;    
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#nuevoResultado {
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#nuevoResultado2 {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#mensaje {
+    font-style: italic;
+}
+
+/* Estilos para el botón "Cerrar sesión" */
+.btn-cerrar-sesion {
+    margin-top: 20px;
+}
