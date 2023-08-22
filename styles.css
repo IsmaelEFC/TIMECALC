@@ -11,6 +11,19 @@ body {
     min-height: 100vh;
 }
 
+/* En tu archivo styles.css */
+#video-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/* Asegúrate de ajustar el tamaño y el posicionamiento según tus necesidades */
 
 .container {
     flex: 1;
