@@ -1,0 +1,215 @@
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;    
+    background: linear-gradient(163deg, rgba(0, 0, 0, 1) 0%, rgba(33, 65, 33, 1) 48%, rgba(0, 0, 0, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.result p {
+    margin-bottom: 10px;
+}
+
+.difference {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #dac527;    
+}
+
+.result .difference {
+    color: #dac527;    
+}
+
+.result .mensaje {
+    color: #542828;
+}
+
+.result .adelanto {
+    color: #01ff27;
+}
+
+.result .retraso {
+    color: #ef1212;
+}
+
+/* Estilos personalizados para el calendario */
+.ui-datepicker {
+    font-size: 14px;
+    width: 290px;    
+}
+
+.ui-datepicker-header {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ui-datepicker-calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.ui-datepicker-calendar th {
+    background-color: #f0f0f0;
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.ui-datepicker-calendar td {
+    border: none;
+    text-align: center;
+    padding: 5px;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ui-datepicker-calendar .ui-state-default:hover {
+    background-color: #f0f0f0;
+}
+
+.ui-datepicker-calendar .ui-state-active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.ui-datepicker-calendar .ui-state-active:hover {
+    background-color: #0069d9;
+}
+
+#ingresoHoraOficial {
+    margin-top: 100px;    
+}
+
+/*.message {
+    margin-top: 40px;
+    color: #2600ff;
+    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+}*/
+
+.container {
+    flex: 1;
+    margin-top: 5px;
+    color: rgb(255, 255, 255);
+    height: auto;    
+    margin-top: 2px;
+    margin-bottom: 2px;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+
+h1 {
+    text-align: center;
+    text-shadow: 1px 1px 3px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    margin-right: 10px;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.adelanto {
+    color: rgb(0, 253, 0);    
+}
+
+.retraso {
+    color: red;
+}
+
+.difference {
+    font-weight: bold;
+}
+
+.invalid {
+    border-color: red;
+}
+
+
+/* Estilos específicos para el bloque "Ingreso Hora Oficial" */
+#ingresoHoraOficial {
+    margin-top: 5px;
+
+}
+
+#ingresoHoraOficial .row {
+    margin-bottom: 20px;
+}
+
+#ingresoHoraOficial .btn-primary {
+    margin-top: 20px;
+}
+
+#ingresoHoraOficial .difference {
+    font-size: 18px;
+}
+
+/* Estilos para el mensaje de resultado */
+#resultado {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 18px;    
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#nuevoResultado {
+    text-shadow: rgb(0, 0, 0) 0.1em 0.1em 0.2em;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#nuevoResultado2 {
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#mensaje {
+    font-style: italic;
+}
+
+/* Estilos para el botón "Cerrar sesión" */
+.btn-cerrar-sesion {
+    margin-top: 20px;
+}
+
+
