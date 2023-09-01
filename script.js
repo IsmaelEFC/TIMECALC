@@ -1,4 +1,6 @@
 function cerrarSesion() {
+  // Cierra la sesión del usuario
+  sessionStorage.clear();
   window.location.href = "index.html"; // Redirige a la página de inicio
 }
 
@@ -233,3 +235,8 @@ function calcularNuevaHora2() {
 }
 
 
+window.addEventListener("blur", function() {
+  setTimeout(function() {
+    cerrarSesion();
+  }, 30000);
+});
