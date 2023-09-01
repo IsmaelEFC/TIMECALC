@@ -208,3 +208,20 @@ body {
     color: #ff0000ab;
 }
 
+/* Estilo para el footer */
+footer {
+    background-color: #0b1a0f;
+    color: #ffffffaf;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilo para el span dentro del footer */
+.footer-content span {
+    font-weight: bold;
+    color: #b16a18a7;
+}
+
