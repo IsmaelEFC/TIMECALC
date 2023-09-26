@@ -235,8 +235,8 @@ function calcularNuevaHora2() {
 }
 
 
-window.addEventListener("blur", function() {
+/*window.addEventListener("blur", function() {
   setTimeout(function() {
     cerrarSesion();
   }, 30000);
-});
+});*/
