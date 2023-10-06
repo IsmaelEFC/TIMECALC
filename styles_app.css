@@ -1,7 +1,8 @@
 
 body {
     font-family: 'Roboto Condensed', sans-serif;    
-    background: linear-gradient(163deg, rgba(0, 0, 0, 1) 0%, rgba(33, 65, 33, 1) 48%, rgba(0, 0, 0, 1) 100%);
+    background: rgb(85, 37, 5);
+    background: radial-gradient(circle, rgb(60, 133, 115) 0%, rgb(2, 27, 58) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,7 +18,6 @@ body {
 
 .result {
     margin-top: 20px;
-    font-weight: bold;
 }
 
 .result p {
@@ -26,24 +26,8 @@ body {
 
 .difference {
     margin-top: 20px;
-    font-weight: bold;
-    color: #dac527;    
-}
-
-.result .difference {
-    color: #dac527;    
-}
-
-.result .mensaje {
-    color: #542828;
-}
-
-.result .adelanto {
-    color: #01ff27;
-}
-
-.result .retraso {
-    color: #ef1212;
+    font-weight: normal;
+    color: #9c703e;    
 }
 
 /* Estilos personalizados para el calendario */
@@ -102,16 +86,10 @@ body {
     margin-top: 100px;    
 }
 
-/*.message {
-    margin-top: 40px;
-    color: #2600ff;
-    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
-}*/
-
 .container {
     flex: 1;
     margin-top: 5px;
-    background: linear-gradient(163deg, rgb(0, 0, 0) 0%, rgb(1, 73, 17) 48%, rgb(0, 0, 0) 100%);
+    background: linear-gradient(163deg, rgb(49, 8, 8) 0%, rgb(1, 73, 17) 48%, rgb(16, 15, 68) 100%);
     color: rgb(255, 255, 255);
     height: auto;    
     margin-top: 2px;
@@ -120,7 +98,7 @@ body {
     max-width: 600px;
     padding: 20px;
     border-radius: 50px;
-    box-shadow: 2px 2px 20px 12px rgba(0, 0, 0, 0.727);
+    box-shadow: 1px 2px 20px 10px rgba(0, 0, 0, 0.727);
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
@@ -130,7 +108,7 @@ body {
 
 h1 {
     text-align: center;
-    text-shadow: 1px 1px 3px black, 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(255, 0, 0);
+    text-shadow: 1px 1px 3px rgb(6, 2, 250), 0 0 1em rgb(0, 0, 0), 0 0 0.2em rgb(0, 0, 0);
 }
 
 .form-group {
@@ -142,24 +120,22 @@ h1 {
     margin-right: 10px;
 }
 
-.result {
-    margin-top: 20px;
-}
-
 .adelanto {
-    color: rgb(0, 253, 0);    
+    color: rgb(0, 253, 0);
+    text-shadow: black 0.1em 0.1em 0.2em;    
 }
 
 .retraso {
     color: red;
+    text-shadow: black 0.1em 0.1em 0.2em;
 }
 
 .difference {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .invalid {
-    border-color: red;
+    border-color: rgb(59, 59, 59);
 }
 
 
@@ -186,7 +162,7 @@ h1 {
     text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 18px;    
     margin-bottom: 10px;
-    font-weight: bold;
+    
 }
 
 #nuevoResultado {
@@ -194,24 +170,28 @@ h1 {
     font-size: 18px;
     margin-top: 10px;
     margin-bottom: 20px;
-    font-weight: bold;
+    
 }
 
 #nuevoResultado2 {
     text-shadow: black 0.1em 0.1em 0.2em;
     font-size: 18px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    font-weight: bold;
+    margin-bottom: 20px;
+    
 }
 
 #mensaje {
-    font-style: italic;
-}
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 18px;    
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+    
+  }
 
 /* Estilos para el botón "Cerrar sesión" */
 .btn-cerrar-sesion {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 
