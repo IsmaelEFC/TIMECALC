@@ -21,6 +21,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  
 }
 
 .login-box {
@@ -28,7 +29,13 @@ body {
   padding: 1rem;
   text-shadow: 1px 1px 2px black, 0 0 1em rgb(0, 0, 0),
     0 0 0.2em rgb(120, 114, 114);
-  background: rgba(59, 58, 58, 0.544);
+  background: linear-gradient(
+    163deg,
+    rgba(20, 152, 161, 0.781) 0%,
+    rgba(153, 81, 18, 0.651) 48%,
+    rgba(10, 8, 139, 0.767) 100%
+  );
+
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
 }
@@ -193,8 +200,8 @@ body {
 
 /* Estilo para el footer */
 footer {
-  background-color: #0b1a0f;
-  color: #ffffffaf;
+  background-color: #000000;
+  color: #ffffff;
   padding: 10px;
   text-align: center;
   position: absolute;
