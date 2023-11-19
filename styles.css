@@ -91,7 +91,12 @@ body {
 .container {
   flex: 1;
   margin-top: 5px;
-  background: linear-gradient(140deg, rgb(8, 84, 114) 0%, rgb(56, 10, 99));
+  background: rgb(6, 122, 126);
+  background: radial-gradient(
+    circle,
+    rgb(0, 189, 214) 0%,
+    rgb(82, 4, 102) 100%
+  );
   color: rgb(255, 255, 255);
   height: auto;
   margin-top: 2px;
