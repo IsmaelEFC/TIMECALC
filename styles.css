@@ -94,8 +94,8 @@ body {
   background: rgb(6, 122, 126);
   background: radial-gradient(
     circle,
-    rgb(0, 189, 214) 0%,
-    rgb(82, 4, 102) 100%
+    rgb(67, 2, 128) 0%,
+    rgb(2, 104, 104) 100%
   );
   color: rgb(255, 255, 255);
   height: auto;
