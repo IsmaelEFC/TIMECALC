@@ -1,6 +1,5 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background: rgb(85, 37, 5);
   background: radial-gradient(
     circle,
     rgb(60, 133, 115) 0%,
@@ -94,8 +93,8 @@ body {
   margin-top: 5px;
   background: linear-gradient(
     160deg,
-    rgba(121, 3, 3, 0.664) 0%,
-    rgba(8, 61, 139, 0.466) 100%
+    rgb(51, 0, 99) 0%,
+    rgba(61, 46, 4, 0.726)
   );
   color: rgb(255, 255, 255);
   height: auto;
