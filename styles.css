@@ -1,10 +1,6 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
-  background: radial-gradient(
-    circle,
-    rgb(60, 133, 115) 0%,
-    rgb(2, 27, 58) 100%
-  );
+  background: radial-gradient(circle, rgb(1, 2, 48) 0%, rgb(26, 0, 0) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -91,11 +87,11 @@ body {
 .container {
   flex: 1;
   margin-top: 5px;
-  background: rgb(6, 122, 126);
+  background: rgb(1, 1, 255);
   background: radial-gradient(
     circle,
-    rgb(67, 2, 128) 0%,
-    rgb(2, 104, 104) 100%
+    rgb(39, 4, 71) 0%,
+    rgb(1, 58, 58) 100%
   );
   color: rgb(255, 255, 255);
   height: auto;
