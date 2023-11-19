@@ -91,11 +91,7 @@ body {
 .container {
   flex: 1;
   margin-top: 5px;
-  background: linear-gradient(
-    160deg,
-    rgb(51, 0, 99) 0%,
-    rgba(61, 46, 4, 0.726)
-  );
+  background: linear-gradient(140deg, rgb(8, 84, 114) 0%, rgb(56, 10, 99));
   color: rgb(255, 255, 255);
   height: auto;
   margin-top: 2px;
@@ -111,13 +107,27 @@ body {
   -o-border-radius: 50px;
 }
 
+h6 {
+  font-weight: bold;
+  text-align: center;
+  color: #069706;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+h6 span {
+  font-weight: bolder;
+  color: rgb(141, 2, 2);
+}
+
 h1 {
   text-align: center;
-  text-shadow: 1px 1px 3px rgb(6, 2, 250), 0 0 1em rgb(0, 0, 0),
-    0 0 0.2em rgb(0, 0, 0);
+  text-shadow: 1px 1px 3px rgb(0, 0, 0), 0 0 1em rgb(78, 2, 2),
+    0 0 0.2em rgb(255, 255, 255);
 }
 
 .form-group {
+  margin-top: 20px;
   margin-bottom: 20px;
   color: #ffffff;
 }
@@ -187,9 +197,4 @@ h1 {
   font-size: 18px;
   margin-bottom: 10px;
   margin-bottom: 20px;
-}
-
-/* Estilos para el botón "Cerrar sesión" */
-.btn-cerrar-sesion {
-  margin-top: 30px;
 }
