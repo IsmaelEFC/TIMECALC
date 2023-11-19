@@ -1,8 +1,8 @@
-function cerrarSesion() {
+//function cerrarSesion() {
   // Cierra la sesión del usuario
-  sessionStorage.clear();
-  window.location.href = "index.html"; // Redirige a la página de inicio
-}
+//  sessionStorage.clear();
+//  window.location.href = "index.html"; // Redirige a la página de inicio
+//}
 
 $(document).ready(function () {
   $('#fechaDVR').datepicker({
@@ -240,3 +240,15 @@ function calcularNuevaHora2() {
     cerrarSesion();
   }, 30000);
 });*/
+
+
+
+document.addEventListener("contextmenu", function(e) {
+  e.preventDefault();
+});
+
+document.querySelector("body").addEventListener("keydown", function(e) {
+  if (e.keyCode === 123) {
+    e.preventDefault();
+  }
+});
