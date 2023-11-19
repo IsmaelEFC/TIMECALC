@@ -28,13 +28,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
-    
+
 </head>
 
 <body>
 
     <div class="container">
         <h1>Calculadora de Desfases</h1>
+        <h6>Creado en Julio 2023 por <span>Ismael Flores "RAVEN"</span></h6>
 
         <!-- Selección de fecha y hora DVR -->
         <div class="form-group">
@@ -71,7 +72,8 @@
         </div>
 
         <!-- Sección cálculo hora DVR -->
-        <button class="btn btn-outline-warning" onclick="mostrarIngresoHoraOficial()">Hora DVR (Orientativa de búsqueda)</button>
+        <button class="btn btn-outline-warning" onclick="mostrarIngresoHoraOficial()">Hora DVR (Orientativa de
+            búsqueda)</button>
 
         <div id="ingresoHoraOficial" style="display: none;">
             <div class="form-group">
@@ -107,10 +109,7 @@
             <button class="btn btn-outline-info" onclick="calcularNuevaHora2()">Calcular Hora OFICIAL</button>
             <p id="nuevoResultado2"></p>
         </div>
-
-        <!--<div class="form-group text-end">
-            <button class="btn btn-outline-danger btn-sm btn-cerrar-sesion" onclick="cerrarSesion()">Cerrar sesión</button>
-        </div>-->
+    </div>
 
 
 </body>
