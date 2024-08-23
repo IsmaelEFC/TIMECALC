@@ -74,6 +74,9 @@ $(document).ready(function () {
     if (validateTime(value)) {
       var formattedValue = formatTime(value);
       $(this).val(formattedValue);
+      
+      // Autocompletar la fecha si está vacía
+      autocompleteDate($(this).attr('id'));
     } else {
       $(this).val('');
     }
@@ -86,17 +89,37 @@ $(document).ready(function () {
   }
 
   function formatTime(value) {
-    // Eliminar cualquier carácter no numérico
     value = value.replace(/\D/g, '');
-
-    // Agregar los dos puntos separadores
     if (value.length >= 4) {
       value = value.slice(0, 2) + ':' + value.slice(2, 4) + ':' + value.slice(4);
     } else if (value.length >= 2) {
       value = value.slice(0, 2) + ':' + value.slice(2);
     }
-
     return value;
+  }
+
+  function autocompleteDate(timepickerId) {
+    let dateFieldId;
+    switch (timepickerId) {
+      case 'horaDVR':
+        dateFieldId = 'fechaDVR';
+        break;
+      case 'horaOficial':
+        dateFieldId = 'fechaOficial';
+        break;
+      case 'nuevaHoraOficial':
+        dateFieldId = 'nuevaFecha';
+        break;
+      case 'nuevaHoraOficial2':
+        dateFieldId = 'nuevaFecha2';
+        break;
+    }
+
+    var dateField = document.getElementById(dateFieldId);
+    if (dateField.value === '') {
+      var today = moment().format('DD/MM/YYYY');
+      dateField.value = today;
+    }
   }
 });
 
