@@ -21,7 +21,7 @@ $(document).ready(function () {
   $('#fechaOficial').datepicker({
     format: 'dd/mm/yyyy',
     autoclose: true,
-    startView: 'decades',
+    startView: 'months',
     minViewMode: 'days',
     todayHighlight: true,
     language: 'es',
@@ -34,7 +34,7 @@ $(document).ready(function () {
   $('#nuevaFecha').datepicker({
     format: 'dd/mm/yyyy',
     autoclose: true,
-    startView: 'decades',
+    startView: 'months',
     minViewMode: 'days',
     todayHighlight: true,
     language: 'es',
@@ -48,7 +48,7 @@ $(document).ready(function () {
   $('#nuevaFecha2').datepicker({
     format: 'dd/mm/yyyy',
     autoclose: true,
-    startView: 'decades',
+    startView: 'months',
     minViewMode: 'days',
     todayHighlight: true,
     language: 'es',
