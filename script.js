@@ -8,7 +8,7 @@ $(document).ready(function () {
   $('#fechaDVR').datepicker({
     format: 'dd/mm/yyyy',
     autoclose: true,
-    startView: 'decades',
+    startView: 'months',
     minViewMode: 'days',
     todayHighlight: true,
     language: 'es',
