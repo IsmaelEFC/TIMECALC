@@ -257,17 +257,55 @@ function calcularNuevaHora2() {
   document.getElementById("nuevoResultado2").innerHTML = resultado3;
 }
 
-
 /*window.addEventListener("blur", function() {
   setTimeout(function() {
     cerrarSesion();
   }, 30000);
 });*/
-
-
-
 document.addEventListener("contextmenu", function(e) {
   e.preventDefault();
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    const app = document.getElementById('app');
+    app.addEventListener('touchstart', handleTouchStart, false);
+    app.addEventListener('touchmove', handleTouchMove, false);
+
+    let xDown = null;
+    let yDown = null;
+
+    function handleTouchStart(evt) {
+        const firstTouch = evt.touches[0];
+        xDown = firstTouch.clientX;
+        yDown = firstTouch.clientY;
+    };
+
+    function handleTouchMove(evt) {
+        if (!xDown || !yDown) {
+            return;
+        }
+
+        const xUp = evt.touches[0].clientX;
+        const yUp = evt.touches[0].clientY;
+
+        const xDiff = xDown - xUp;
+        const yDiff = yDown - yUp;
+
+        if (Math.abs(yDiff) > Math.abs(xDiff)) {
+            if (yDiff > 0) {
+                // Arrastrando hacia arriba
+            } else {
+                // Arrastrando hacia abajo (Pull-to-Refresh)
+                if (window.scrollY === 0) {
+                    location.reload(); // Recargar la página
+                }
+            }
+        }
+
+        // Resetear valores
+        xDown = null;
+        yDown = null;
+    };
 });
 
 document.querySelector("body").addEventListener("keydown", function(e) {
