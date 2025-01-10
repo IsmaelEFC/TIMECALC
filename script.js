@@ -268,48 +268,29 @@ document.addEventListener("contextmenu", function(e) {
 
 document.addEventListener('DOMContentLoaded', function () {
     const app = document.getElementById('app');
-    app.addEventListener('touchstart', handleTouchStart, false);
-    app.addEventListener('touchmove', handleTouchMove, false);
+    let touchstartY = 0;
+    let touchendY = 0;
 
-    let xDown = null;
-    let yDown = null;
+    app.addEventListener('touchstart', function (e) {
+        touchstartY = e.changedTouches[0].screenY;
+    }, false);
 
-    function handleTouchStart(evt) {
-        const firstTouch = evt.touches[0];
-        xDown = firstTouch.clientX;
-        yDown = firstTouch.clientY;
-    };
+    app.addEventListener('touchend', function (e) {
+        touchendY = e.changedTouches[0].screenY;
+        handleGesture();
+    }, false);
 
-    function handleTouchMove(evt) {
-        if (!xDown || !yDown) {
-            return;
+    function handleGesture() {
+        if (touchendY > touchstartY + 50 && window.scrollY === 0) { // Pull down more than 50px from top
+            refreshContent();
         }
+    }
 
-        const xUp = evt.touches[0].clientX;
-        const yUp = evt.touches[0].clientY;
-
-        const xDiff = xDown - xUp;
-        const yDiff = yDown - yUp;
-
-        if (Math.abs(yDiff) > Math.abs(xDiff)) {
-            if (yDiff > 0) {
-                // Arrastrando hacia arriba
-            } else {
-                // Arrastrando hacia abajo (Pull-to-Refresh)
-                if (window.scrollY === 0) {
-                    location.reload(); // Recargar la página
-                }
-            }
+    function refreshContent() {
+        if (typeof Haptics !== 'undefined') {
+            Haptics.vibrate();
         }
-
-        // Resetear valores
-        xDown = null;
-        yDown = null;
-    };
+        location.reload(); // Reload the page
+    }
 });
 
-document.querySelector("body").addEventListener("keydown", function(e) {
-  if (e.keyCode === 123) {
-    e.preventDefault();
-  }
-});
