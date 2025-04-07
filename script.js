@@ -61,8 +61,9 @@ function calcularDiferencia() {
   const fechaOficial = $('#fechaOficial').val();
   const horaOficial = $('#horaOficial').val();
 
-  const fechaHoraDvr = moment(`${fechaDvr} ${horaDvr}`, 'DD/MM/YYYY HH:mm:ss');
-  const fechaHoraOficial = moment(`${fechaOficial} ${horaOficial}`, 'DD/MM/YYYY HH:mm:ss');
+  // Usar UTC para evitar ajustes de horario de verano
+  const fechaHoraDvr = moment.utc(`${fechaDvr} ${horaDvr}`, 'DD/MM/YYYY HH:mm:ss');
+  const fechaHoraOficial = moment.utc(`${fechaOficial} ${horaOficial}`, 'DD/MM/YYYY HH:mm:ss');
   const diferencia = moment.duration(fechaHoraDvr.diff(fechaHoraOficial));
 
   const anos = Math.abs(diferencia.years());
