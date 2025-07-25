@@ -1,20 +1,23 @@
 {
-  "name": "TIMECALC",
-  "short_name": "TimeCalc",
-  "start_url": "./",
+  "name": "Autodesfase",
+  "short_name": "Autodesfase",
+  "description": "Captura hora oficial y ubicación geográfica en tiempo real.",
+  "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#1e1e1e",
+  "background_color": "#111111",
+  "theme_color": "#0078d4",
+  "orientation": "portrait",
+  "scope": "./",
   "icons": [
-    {
-      "src": "icon-192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "icon-512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
+      {
+          "src": "./icons/icon-192x192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+      },
+      {
+          "src": "./icons/icon-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
   ]
 }
